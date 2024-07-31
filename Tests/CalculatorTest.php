@@ -3,7 +3,7 @@
 namespace Cheba\PhpUnit\Tests;
 
 use Cheba\PhpUnit\Calculator;
-use http\Exception\InvalidArgumentException;
+use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 class CalculatorTest extends TestCase
@@ -19,7 +19,7 @@ class CalculatorTest extends TestCase
         $this->assertEquals(1, $result);
 
         $result = $calculator->add(-2, -3);
-        $this->assertEquals(-6, $result);
+        $this->assertEquals(-5, $result);
 
         $result = $calculator->add(0, 0);
         $this->assertEquals(0, $result);
